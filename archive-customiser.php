@@ -328,7 +328,7 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
 							while ( $x <= 5 ) {
 								$value 		= $per_page * $x;
 								$selected 	= selected( $woo_per_page, $value, false );
-								$label 		= __( "{$value} per page", 'woocommerce-product-archive-customiser' );
+								$label 		=  "{$value} ". __("per page", 'woocommerce-product-archive-customiser' );
 								echo "<option value='{$value}' {$selected}>{$label}</option>";
 								$x++;
 							}
